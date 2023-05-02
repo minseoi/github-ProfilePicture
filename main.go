@@ -35,7 +35,7 @@ func (gene *Generator) Init(margin int, numOfPixel int) {
 
 	//set background
 	gene.bgImg = image.NewRGBA(image.Rect(0, 0, 420, 420))
-	draw.Draw(gene.bgImg, gene.bgImg.Bounds(), &image.Uniform{color.White}, image.ZP, draw.Src)
+	draw.Draw(gene.bgImg, gene.bgImg.Bounds(), &image.Uniform{color.RGBA{240, 240, 240, 255}}, image.ZP, draw.Src)
 }
 
 func (gene *Generator) SetPixel(x int, y int) {
